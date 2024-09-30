@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "label": "About Us",
+    "link": "/about-us"
+  },
+  {
+    "id": 3,
+    "label": "Services",
+    "link": "/services"
+  },
+  {
+    "id": 2,
+    "label": "Results",
+    "link": "/results"
+  },
+  {
+    "id": 4,
+    "label": "Process",
+    "link": "/process"
+  },
+  {
+    "id": 5,
+    "label": "FAQs",
+    "link": "/faqs"
+  }
+]
