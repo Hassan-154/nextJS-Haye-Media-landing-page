@@ -2,8 +2,8 @@ import React from "react";
 
 export function Comparison() {
   return (
-    <div>
-      <div className="py-[30px] sm:py-[70px] text-lightGray px-3 text-center">
+    <div className="pt-[40px] sm:pt-[85px]">
+      <div className=" text-lightGray px-3 text-center">
         <span className="rounded-[11px] py-[8px] px-[14px] border border-darkGray">
           Comparison
         </span>
