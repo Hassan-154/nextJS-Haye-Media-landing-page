@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Funnel Audit",
+    "paragraph": "We'll start by analysing your sales funnel and seeing what's holding you back.",
+    "logo": "/images/Funnel.png"
+  },
+  {
+    "id": 3,
+    "title": "Campaign Setup",
+    "paragraph": "Then, with your business goals in mind, we will set up the advertising campaigns.",
+     "logo": "/images/Campaign.png"
+  },
+  {
+    "id": 2,
+    "title": "Maximise Profit",
+    "paragraph": "We'll then work towards driving the cost per action down to maximise profit.",
+     "logo": "/images/Maximise.png"
+  }
+]

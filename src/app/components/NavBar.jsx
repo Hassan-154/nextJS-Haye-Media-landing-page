@@ -5,7 +5,6 @@ import Link from "next/link";
 import Button from "./Button";
 
 function NavBar() {
-  console.log("menu data", menuData);
 
   return (
     <div className="fixed top-0 left-0 w-full shadow-md z-50">

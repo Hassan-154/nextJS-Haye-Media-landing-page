@@ -5,7 +5,7 @@ import HeroVideoDialog from "@/components/ui/hero-video-dialog";
 
 function Home() {
   return (
-    <div className="text-white">
+    <div className="text-lightGray h-[140vh] md:h-[95vh]">
       <div class="absolute flex justify-center inset-0">
         <Image src="/images/home-background.png" width={1100} height={1100} />
       </div>
