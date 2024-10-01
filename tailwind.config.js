@@ -13,6 +13,9 @@ module.exports = {
   			foreground: 'hsl(var(--foreground))',
   			violet: '#8337FF',
   			lightGray: '#FCFCFA',
+			darkGray: "#201a29",
+			dimGray: '#999999',
+
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
