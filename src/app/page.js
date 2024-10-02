@@ -1,4 +1,5 @@
 import Comparison from "./components/Comparison";
+import FAQ from "./components/FAQ";
 import Home from "./components/Home";
 import OurClients from "./components/OurClients";
 import Process from "./components/Process";
@@ -8,9 +9,11 @@ export default function page() {
     <>
       <Home />
       <OurClients />
+      <Service/>
       <Process />
       <Comparison/>
-      <Service/>
+ 
+      <FAQ/>
     </>
   );
 }

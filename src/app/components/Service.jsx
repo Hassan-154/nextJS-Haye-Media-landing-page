@@ -17,25 +17,20 @@ function Service() {
           results we will bring to your brand.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row gap-[40px] max-w-[900px] mx-auto py-[30px] sm:pt-[55px] px-3">
+      <div className="flex flex-col md:flex-row gap-[40px] max-w-[870px] mx-auto py-[30px] sm:pt-[55px] px-3">
         {serviceData.map((serviceItem) => (
-          <div className="md:w-1/2">
+          <div className="relative md:w-1/2 border py-4 sm:y-6  overflow-hidden !border-darkGray rounded-[17px]">
             <div>
-              {" "}
-              <div className="flex items-center justify-center gap-2.5">
-                {serviceItem.logo && (
-                  <Image
-                    src={serviceItem.logo}
-                    width={35}
-                    height={35}
-                    alt={serviceItem.heading}
-                  />
-                )}
-                <h5 className="text-lightGray text-[22px] font-medium">
-                  {serviceItem.heading}
+              <div className="px-4 sm:px-6">
+                <h5 className="text-lightGray text-[33px] leading-[38px] md:text-[42px] md:leading-[45px] font-bold">
+                  {serviceItem.service}
                 </h5>
+                <p className="text-dimGray pt-1.5 text-[15px] leading-[19px] md:text-[15.5px] md:leading-[20px]">
+                  {serviceItem.description}
+                </p>
               </div>
-              <ul className="flex flex-col gap-[13px] border !border-darkGray p-4 sm:p-6 rounded-[15px] mt-[20px]">
+              <div className="bg-dimGray mx-2 sm:mx-4 h-[2.5px] mt-4"></div>
+              <ul className="flex flex-col gap-[13px] mt-[20px] px-4 sm:px-6 ">
                 {serviceItem.features.map((item) => (
                   <li key={item} className="flex items-center gap-2">
                     <Image
@@ -56,15 +51,31 @@ function Service() {
                   </li>
                 ))}
               </ul>
-              <div className="flex justify-end">
+              <div className="flex justify-end pr-4 sm:pr-6">
                 <Image
                   src="/images/circle-correct.png"
-                  width={45}
-                  height={45}
+                  width={43}
+                  height={43}
                   alt="icon"
                 />
               </div>
             </div>
+           <div className="absolute top-0">
+           <Image
+              src="/SVGs/service-top.png"
+              width={320}
+              height={320}
+              alt="icon"
+            />
+           </div>
+           <div className="absolute bottom-0 right-0">
+           <Image
+              src="/SVGs/service-bottom.png"
+              width={320}
+              height={320}
+              alt="icon"
+            />
+           </div>
           </div>
         ))}
       </div>

@@ -1,0 +1,17 @@
+[
+  {
+    "key": "1",
+    "question": "What is the return policy?",
+    "answer": "You can return any item within 30 days of purchase for a full refund."
+  },
+  {
+    "key": "2",
+    "question": "How do I track my order?",
+    "answer": "You can track your order by logging into your account and clicking on the 'Order History' tab."
+  },
+  {
+    "key": "3",
+    "question": "What forms of payment do you accept?",
+    "answer": "We accept all major credit cards, including Visa, Mastercard, and American Express, as well as PayPal."
+  }
+]
