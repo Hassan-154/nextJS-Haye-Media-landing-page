@@ -60,22 +60,22 @@ function Service() {
                 />
               </div>
             </div>
-           <div className="absolute top-0">
-           <Image
-              src="/SVGs/service-top.png"
-              width={320}
-              height={320}
-              alt="icon"
-            />
-           </div>
-           <div className="absolute bottom-0 right-0">
-           <Image
-              src="/SVGs/service-bottom.png"
-              width={320}
-              height={320}
-              alt="icon"
-            />
-           </div>
+            <div className="absolute top-0">
+              <Image
+                src="/SVGs/service-top.png"
+                width={320}
+                height={320}
+                alt="icon"
+              />
+            </div>
+            <div className="absolute bottom-0 right-0">
+              <Image
+                src="/SVGs/service-bottom.png"
+                width={320}
+                height={320}
+                alt="icon"
+              />
+            </div>
           </div>
         ))}
       </div>

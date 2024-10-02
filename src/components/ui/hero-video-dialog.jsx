@@ -94,14 +94,14 @@ export default function HeroVideoDialog({
             animate={{ opacity: 1 }}
             onClick={() => setIsVideoOpen(false)}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md"
+            className="fixed inset-0 !z-50 flex items-center justify-center bg-black/50 backdrop-blur-md"
           >
             <motion.div
               {...selectedAnimation}
               transition={{ type: "spring", damping: 30, stiffness: 300 }}
               className="relative w-full max-w-4xl aspect-video mx-4 md:mx-0"
             >
-              <motion.button className="absolute -top-16 right-0 text-white text-xl bg-neutral-900/50 ring-1 backdrop-blur-md rounded-full p-2 dark:bg-neutral-100/50 dark:text-black">
+              <motion.button className="absolute -top-2 -right-12 text-white text-xl bg-neutral-900/50 ring-1 backdrop-blur-md rounded-full p-2 dark:bg-neutral-100/50 dark:text-black">
                 <XIcon className="size-5" />
               </motion.button>
               <div className="size-full border-2 border-white rounded-2xl overflow-hidden isolate z-[1] relative">

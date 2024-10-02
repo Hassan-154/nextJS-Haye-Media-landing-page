@@ -28,7 +28,7 @@ function FAQ() {
         <div className="accordion-group">
           {faqData.map((faqItems) => (
             <div
-              key={faqItems.key}
+             
               className={`accordion border border-solid border-darkGray py-1.5 px-2 rounded-xl transition duration-700 ${
                 openFAQ === faqItems.key ? "" : ""
               } mb-4 md:py-2 md:px-3`}
