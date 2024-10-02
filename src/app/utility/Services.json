@@ -1,0 +1,24 @@
+[
+    {
+        "service": "Social Media\nMarketing",
+        "description": "Boost your brand's reach and generate new leads\nthrough content creation and organic ads",
+        "features": [
+            "Create content that reaches the correct audience.",
+            "Unique approach that is tailored specifically for your\nbusiness.",
+            "Content that actually converts.",
+            "Improvements to traditional marketing workflows.",
+            "Create new customer relationships."
+        ]
+    },
+    {
+        "service": "Brand\nConsultancy",
+        "description": "I have no clue what to put here atm cause I'm not\nthat sure what this service is supposed to be.",
+        "features": [
+            "Create content that reaches the correct audience.",
+            "Unique approach that is tailored specifically for your\nbusiness.",
+            "Content that actually converts.",
+            "Improvements to traditional marketing workflows.",
+            "Create new customer relationships."
+        ]
+    }
+]

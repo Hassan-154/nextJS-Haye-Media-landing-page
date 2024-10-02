@@ -1,4 +1,4 @@
-import { Inter } from '@next/font/google'; // Import Inter from Google Fonts
+import { Inter } from 'next/font/google'; // Updated import from built-in next/font
 import "./globals.css";
 import NavBar from "./components/NavBar";
 

@@ -1,0 +1,26 @@
+[
+  {
+    "heading": "Other Agencies",
+    "logo": "",
+    "data": [
+      "Slow communication",
+      "Single channel approach",
+      "Outdated growth strategies",
+      "Lack of industry research",
+      "Outsourced to mediocre talent"
+    ],
+    "icon": "/images/cross.png"
+  },
+  {
+    "heading": "HayeMedia",
+    "logo": "/images/logo.png",
+    "data": [
+      "Constant, proactive communication",
+      "Omni-channel approach",
+      "Tailored best-fit solutions",
+      "Provides industry specific expertise",
+      "Experts with years of experience"
+    ],
+    "icon": "/images/correct.png"
+  }
+]

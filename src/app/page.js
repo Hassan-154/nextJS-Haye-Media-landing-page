@@ -2,6 +2,7 @@ import Comparison from "./components/Comparison";
 import Home from "./components/Home";
 import OurClients from "./components/OurClients";
 import Process from "./components/Process";
+import Service from "./components/Service";
 export default function page() {
   return (
     <>
@@ -9,6 +10,7 @@ export default function page() {
       <OurClients />
       <Process />
       <Comparison/>
+      <Service/>
     </>
   );
 }
