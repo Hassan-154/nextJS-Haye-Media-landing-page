@@ -27,7 +27,7 @@ function OurClients() {
           results we will bring to your brand.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row gap-[40px] max-w-[870px] mx-auto py-[30px] sm:pt-[55px] px-3">
+      <div data-aos="fade-up" className="flex flex-col md:flex-row gap-[40px] max-w-[870px] mx-auto py-[30px] sm:pt-[55px] px-3">
         {cLientData.map((clientItems, index) => (
           <div
             key={index}

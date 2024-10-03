@@ -10,12 +10,13 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-body{
+body {
   background-color: black;
 }
 
-.clients-card-1{
-  background-image: url('/SVGs/service-top.png'), url('/SVGs/service-bottom.png');
+.clients-card-1 {
+  background-image: url("/SVGs/service-top.png"),
+    url("/SVGs/service-bottom.png");
   background-size: cover, contain; /* Different sizes for each image */
   background-position: center, top right; /* Different positions for each image */
   background-repeat: no-repeat, no-repeat; /* Prevents both images from repeating */
@@ -23,13 +24,18 @@ body{
   width: 100%;
 }
 
-
-.clients-card-2{
-  background-image: url('/SVGs/service-top.png');
+.clients-card-2 {
+  background-image: url("/SVGs/service-top.png");
   background-size: cover, contain; /* Different sizes for each image */
   background-position: center, top right; /* Different positions for each image */
   background-repeat: no-repeat, no-repeat; /* Prevents both images from repeating */
   height: 100%;
   width: 100%;
   z-index: -1;
+}
+
+.svg-home-profile {
+  background:
+    url("/SVGs/home-right.png")
+      no-repeat center / cover;
 }

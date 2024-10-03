@@ -17,7 +17,7 @@ function Service() {
           results we will bring to your brand.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row gap-[40px] max-w-[870px] mx-auto py-[30px] sm:pt-[55px] px-3">
+      <div data-aos="fade-up" className="flex flex-col md:flex-row gap-[40px] max-w-[870px] mx-auto py-[30px] sm:pt-[55px] px-3">
         {serviceData.map((serviceItem) => (
           <div className="-z-[1] relative md:w-1/2 border py-4 sm:y-6  overflow-hidden !border-darkGray rounded-[17px]">
             <div>

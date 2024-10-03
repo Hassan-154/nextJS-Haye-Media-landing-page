@@ -5,7 +5,7 @@ import Image from "next/image";
 function OurClientBottom() {
   const [width, setWidth] = useState(window.innerWidth);
 
-  console.log(width);
+ 
 
   useEffect(() => {
     // Function to update state on window resize
@@ -21,7 +21,7 @@ function OurClientBottom() {
   }, []);
 
   return (
-    <div className="max-w-[870px] mx-auto">
+    <div className="max-w-[870px] mx-auto" data-aos="fade-up">
       <div
         className={`flex flex-col sm:flex-row border mx-3 p-4 rounded-[17px] sm:p-6 border-darkGray ${
           width >= 640 ? "" : "items-center"

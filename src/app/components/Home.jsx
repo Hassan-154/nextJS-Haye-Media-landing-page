@@ -18,7 +18,7 @@ function Home() {
         />
       </div>
       <div className="absolute inset-0 h-auto pt-[170px] pb-[30px] md:h-[110vh] md:py-0 max-w-[1100px] px-3 items-center mx-auto flex flex-col md:flex-row gap-[50px] md:gap-0">
-        <div className="w-3/3 md:w-2/3 flex flex-col gap-5">
+        <div className="w-3/3 md:w-2/3 flex flex-col gap-5" data-aos="fade-right">
           <Image src="/images/Reviews.png" width={350} height={100} />
           <div>
             <h1 className="text-[30px] leading-[37px] sm:text-[35px] sm:leading-[42px] md:text-[40px] md:leading-[46px] lg:text-[55px] lg:leading-[62px] font-bold md:mr-10">

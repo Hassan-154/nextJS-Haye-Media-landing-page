@@ -5,7 +5,9 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <div className="flex flex-col gap-12 sm:gap-0 sm:flex-row sm:justify-between items-center justify-center max-w-[1100px] mx-auto px-3 py-[40px] sm:py-[70px]">
+    <div className="mt-[40px]">
+    <div className="h-[1.5px] bg-darkGray"></div>
+      <div className="flex flex-col gap-12 sm:gap-0 sm:flex-row sm:justify-between items-center justify-center max-w-[1100px] mx-auto px-3 py-[40px] sm:py-[70px]">
       <div className="flex flex-col gap-4">
         <div className="flex items-center gap-1.5">
           <Image src="/images/logo.png" alt="now" width={34} height={34} />
@@ -48,6 +50,7 @@ function Footer() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

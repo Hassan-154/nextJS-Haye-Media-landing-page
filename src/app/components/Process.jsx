@@ -3,7 +3,7 @@ import Image from "next/image";
 import processData from "@/app/utility/process.json";
 
 export function Process() {
-  console.log("data", processData);
+
 
   return (
     <div className="pt-[40px] sm:pt-[85px]" id='process'>
@@ -20,7 +20,7 @@ export function Process() {
           creation, we've got you covered on everything front.</p>
         </div>
       </div>
-      <div className="flex sm:flex-row flex-col gap-[20px] sm:gap-0 justify-between text-center max-w-[850px] mx-auto py-[30px] sm:py-[45px]">
+      <div data-aos="fade-up" className="flex sm:flex-row flex-col gap-[20px] sm:gap-0 justify-between text-center max-w-[850px] mx-auto py-[30px] sm:py-[45px]">
         {processData.map((processItems, index) => (
           <div className="flex flex-col gap-2 sm:gap-4" key={index}>
             <Image

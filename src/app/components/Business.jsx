@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Business() {
   return (
-    <div className="relative px-3">
+    <div data-aos="fade-up" className="relative px-3 mt-[35px]  sm:mt-[70px]">
       <Image
         className="absolute inset-0 mx-auto object-cover z-0"
         src="/images/business-bg.png"

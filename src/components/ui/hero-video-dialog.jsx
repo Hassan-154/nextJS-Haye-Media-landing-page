@@ -54,12 +54,11 @@ export default function HeroVideoDialog({
   thumbnailSrc,
   thumbnailAlt = "Video thumbnail",
   className,
-  onVideoOpenChange, 
+  onVideoOpenChange,
 }) {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const selectedAnimation = animationVariants[animationStyle];
 
-  
   const handleVideoOpen = (isOpen) => {
     setIsVideoOpen(isOpen);
     if (onVideoOpenChange) {
@@ -71,7 +70,7 @@ export default function HeroVideoDialog({
     <div className={cn("relative", className)}>
       <div
         className="relative cursor-pointer group"
-        onClick={() => handleVideoOpen(true)} 
+        onClick={() => handleVideoOpen(true)}
       >
         {thumbnailSrc && (
           <img
@@ -79,7 +78,7 @@ export default function HeroVideoDialog({
             alt={thumbnailAlt} // Use the thumbnailAlt prop
             width={1920}
             height={1080}
-            className="w-full transition-all duration-200 group-hover:brightness-[0.8] ease-out rounded-md shadow-lg"
+            className="w-full roun] transition-all duration-200 group-hover:brightness-[0.8] ease-out rounded-md shadow-lg"
           />
         )}
         {/* <div  className={`box ${ !isVideoOpen ? 'hidden opacity-0' : ''}`}>
@@ -99,14 +98,13 @@ export default function HeroVideoDialog({
           </div>
         </div>
         </div> */}
-       
       </div>
       <AnimatePresence>
         {isVideoOpen && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-             onClick={() => handleVideoOpen(false)} 
+            onClick={() => handleVideoOpen(false)}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md"
           >

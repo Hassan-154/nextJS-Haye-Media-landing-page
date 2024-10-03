@@ -10,7 +10,7 @@ function FAQ() {
   };
 
   return (
-    <div className="pt-[40px] sm:pt-[85px]" id='faqs'>
+    <div data-aos="fade-up" className="pt-[40px] sm:pt-[85px]" id='faqs'>
       <div className=" text-lightGray px-3 text-center">
         <span className="rounded-[11px] py-[8px] px-[14px] border border-darkGray">
           FAQ
