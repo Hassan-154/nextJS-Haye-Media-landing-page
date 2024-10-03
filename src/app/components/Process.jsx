@@ -6,7 +6,7 @@ export function Process() {
   console.log("data", processData);
 
   return (
-    <div className="pt-[40px] sm:pt-[85px]">
+    <div className="pt-[40px] sm:pt-[85px]" id='process'>
       <div>
         <div className="py-[15px] sm:py-[20px] text-lightGray px-3 text-center">
           <span className="rounded-[11px] py-[8px] px-[14px] border border-darkGray">

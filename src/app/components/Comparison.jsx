@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function Comparison() {
   return (
-    <div className="pt-[40px] sm:pt-[85px]">
+    <div className="pt-[40px] sm:pt-[85px]" id="results">
       <div className=" text-lightGray px-3 text-center">
         <span className="rounded-[11px] py-[8px] px-[14px] border border-darkGray">
           Comparison

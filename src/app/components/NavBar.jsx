@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import menuData from "@/app/utility/navbar.json";
 import Image from "next/image";
@@ -15,11 +15,13 @@ function NavBar() {
 
   return (
     <div className="fixed top-0 left-0 w-full shadow-md z-50 px-3">
-      <div className="flex items-center text-lightGray bg-black max-w-[850px] mx-auto px-6 py-2.5 mt-7 border border-[#201a29] rounded-[10px]">
+      <div className="flex w-full items-center text-lightGray bg-black max-w-[850px] mx-auto px-6 py-2.5 mt-7 border border-[#201a29] rounded-[10px]">
+        <Link href='#/'>
         <div className="flex items-center gap-1.5">
           <Image src="/images/logo.png" alt="now" width={37} height={37} />
           <h5 className="font-bold text-[15.5px]">Haye Media</h5>
         </div>
+        </Link>
         <div className="flex-grow gap-2.5 hidden md:flex justify-center text-[15px]">
           {menuData.map((menuItems, index) => (
             <Link
@@ -31,9 +33,16 @@ function NavBar() {
             </Link>
           ))}
         </div>
-        <Button />
-        <div className="md:hidden flex items-center">
-          <button onClick={toggleMobileMenu}>
+        <div className="hidden md:flex items-center">
+          {" "}
+          {/* Keep Button on larger screens */}
+          <Button />
+        </div>
+        <div className="md:hidden flex items-center ml-auto">
+          {" "}
+          {/* Ensure it aligns to the right in mobile */}
+          <Button />
+          <button onClick={toggleMobileMenu} className="ml-2">
             {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
@@ -41,16 +50,16 @@ function NavBar() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 w-3/4 h-full bg-black bg-opacity-90 transform ${
+        className={`fixed top-0 right-0 w-3/5 h-full bg-black bg-opacity-90 transform ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out z-40`}
       >
         <div className="flex justify-end p-4">
           <button onClick={toggleMobileMenu}>
-            <FaTimes size={24} className="text-lightGray" />
+            <FaTimes size={26} className="text-lightGray" />
           </button>
         </div>
-        <nav className="flex flex-col items-center mt-20">
+        <nav className="flex flex-col items-center mt-10">
           {menuData.map((menuItems, index) => (
             <Link
               key={index}

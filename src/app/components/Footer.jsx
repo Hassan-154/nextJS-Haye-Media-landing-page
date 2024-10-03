@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -32,17 +33,17 @@ function Footer() {
           <div>
             <h5 className="text-lightGray">Links</h5>
             <ul className=" flex flex-col gap-2.5 mt-3">
-              <li>Results</li>
-              <li>Services</li>
-              <li>Comparison</li>
+              <Link href='#comparison'><li>Results</li></Link>
+              <Link href='#services'><li>Services</li></Link>
+             <Link href='#comparison'> <li>Comparison</li></Link>
             </ul>
           </div>
           <div>
             <h5 className="text-lightGray">Information</h5>
             <ul className=" flex flex-col gap-2.5 mt-3">
-              <li>FAQ</li>
-              <li>Contact Us</li>
-              <li>About Us</li>
+              <Link href='#faq'><li>FAQ</li></Link>
+              <Link href='#/'><li>Contact Us</li></Link>
+              <Link href='#/'><li>About Us</li></Link>
             </ul>
           </div>
         </div>

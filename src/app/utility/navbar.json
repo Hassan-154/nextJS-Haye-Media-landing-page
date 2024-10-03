@@ -2,26 +2,26 @@
   {
     "id": 1,
     "label": "About Us",
-    "link": "/about-us"
+    "link": "#about-us"
   },
   {
     "id": 3,
     "label": "Services",
-    "link": "/services"
+    "link": "#services"
   },
   {
     "id": 2,
     "label": "Results",
-    "link": "/results"
+    "link": "#results"
   },
   {
     "id": 4,
     "label": "Process",
-    "link": "/process"
+    "link": "#process"
   },
   {
     "id": 5,
     "label": "FAQs",
-    "link": "/faqs"
+    "link": "#faqs"
   }
 ]
