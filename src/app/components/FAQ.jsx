@@ -10,9 +10,9 @@ function FAQ() {
   };
 
   return (
-    <div data-aos="fade-up" className="pt-[40px] sm:pt-[85px]" id='faqs'>
+    <div data-aos="fade-up" className="pt-[40px] sm:pt-[85px]" id="faqs">
       <div className=" text-lightGray px-3 text-center">
-        <span className="rounded-[11px] py-[8px] px-[14px] border border-darkGray">
+        <span className="rounded-[11px] py-[8px] px-[24px] border border-darkGray">
           FAQ
         </span>
         <h1 className="text-[30px] leading-[35px] sm:text-[35px] sm:leading-[40px] md:text-[40px] md:leading-[45px] lg:text-[55px] lg:leading-[60px] max-w-[560px] mx-auto font-normal mt-6">
@@ -28,7 +28,6 @@ function FAQ() {
         <div className="accordion-group">
           {faqData.map((faqItems) => (
             <div
-             
               className={`accordion border border-solid border-darkGray py-1.5 px-2 rounded-xl transition duration-700 ${
                 openFAQ === faqItems.key ? "" : ""
               } mb-4 md:py-2 md:px-3`}

@@ -3,21 +3,25 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 function OurClientBottom() {
-  const [width, setWidth] = useState(window.innerWidth);
-
- 
+  const [width, setWidth] = useState(0); // Initial width can be set to 0 or any default value
 
   useEffect(() => {
     // Function to update state on window resize
     const handleResize = () => setWidth(window.innerWidth);
 
-    // Add event listener for window resize
-    window.addEventListener("resize", handleResize);
+    // Check if window is defined to avoid SSR issues
+    if (typeof window !== "undefined") {
+      // Set initial width
+      setWidth(window.innerWidth);
 
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+      // Add event listener for window resize
+      window.addEventListener("resize", handleResize);
+      
+      // Clean up the event listener on component unmount
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
   }, []);
 
   return (
@@ -53,7 +57,12 @@ function OurClientBottom() {
           />
         </div>
         <div className="sm:w-1/3">
-          <Image src="/images/graph.png" width={270} height={270} alt="image" />
+          <Image
+            src="/images/graph.png"
+            width={270}
+            height={270}
+            alt="image"
+          />
         </div>
       </div>
     </div>
