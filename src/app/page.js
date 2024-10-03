@@ -1,19 +1,36 @@
+import BrandLogo from "./components/BrandLogo";
+import Business from "./components/Business";
 import Comparison from "./components/Comparison";
 import FAQ from "./components/FAQ";
 import Home from "./components/Home";
 import OurClients from "./components/OurClients";
 import Process from "./components/Process";
 import Service from "./components/Service";
+import Image from "next/image";
 export default function page() {
   return (
     <>
-      <Home />
-      <OurClients />
-      <Service/>
+      <div className="relative">
+        <div>
+          <Home />
+          <BrandLogo/>
+          <OurClients />
+        </div>
+        <div className="absolute top-[30vh] right-0 !-z-[100]">
+          <Image
+            src="/SVGs/home-right.png"
+            className="min-h-[100vh]"
+            width={500}
+            height={600}
+            alt="svg"
+          />
+        </div>
+      </div>
+      <Service />
       <Process />
-      <Comparison/>
- 
-      <FAQ/>
+      <Comparison />
+      <Business />
+      <FAQ />
     </>
   );
 }

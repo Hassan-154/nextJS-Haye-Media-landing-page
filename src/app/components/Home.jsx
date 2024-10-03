@@ -10,7 +10,12 @@ function Home() {
         <Image src="/images/home-background.png" width={1100} height={1100} />
       </div>
       <div class="absolute top-0 left-0">
-        <Image src="/SVGs/home-left.png" className="h-[100vh]" width={500} height={500} />
+        <Image
+          src="/SVGs/home-left.png"
+          className="h-[100vh]"
+          width={500}
+          height={500}
+        />
       </div>
       <div className="absolute inset-0 h-auto pt-[170px] pb-[30px] md:h-[110vh] md:py-0 max-w-[1100px] px-3 items-center mx-auto flex flex-col md:flex-row gap-[50px] md:gap-0">
         <div className="w-3/3 md:w-2/3 flex flex-col gap-5">
@@ -44,6 +49,9 @@ function Home() {
               thumbnailSrc="/images/profile.png"
               thumbnailAlt="Hero Video"
             ></HeroVideoDialog>
+            <div className="absolute bottom-0">
+              <Image src="/images/video-bottom.png" width={380} height={120} />
+            </div>
           </div>
         </div>
       </div>

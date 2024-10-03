@@ -19,7 +19,7 @@ function Service() {
       </div>
       <div className="flex flex-col md:flex-row gap-[40px] max-w-[870px] mx-auto py-[30px] sm:pt-[55px] px-3">
         {serviceData.map((serviceItem) => (
-          <div className="relative md:w-1/2 border py-4 sm:y-6  overflow-hidden !border-darkGray rounded-[17px]">
+          <div className="-z-[1] relative md:w-1/2 border py-4 sm:y-6  overflow-hidden !border-darkGray rounded-[17px]">
             <div>
               <div className="px-4 sm:px-6">
                 <h5 className="text-lightGray text-[33px] leading-[38px] md:text-[42px] md:leading-[45px] font-bold">

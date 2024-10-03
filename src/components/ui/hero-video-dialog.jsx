@@ -54,23 +54,35 @@ export default function HeroVideoDialog({
   thumbnailSrc,
   thumbnailAlt = "Video thumbnail",
   className,
+  onVideoOpenChange, 
 }) {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const selectedAnimation = animationVariants[animationStyle];
+
+  
+  const handleVideoOpen = (isOpen) => {
+    setIsVideoOpen(isOpen);
+    if (onVideoOpenChange) {
+      onVideoOpenChange(isOpen); // Call the parent function with the new state
+    }
+  };
 
   return (
     <div className={cn("relative", className)}>
       <div
         className="relative cursor-pointer group"
-        onClick={() => setIsVideoOpen(true)}
+        onClick={() => handleVideoOpen(true)} 
       >
-        <img
-          src={thumbnailSrc}
-          alt=""
-          width={1920}
-          height={1080}
-          className="w-full transition-all duration-200 group-hover:brightness-[0.8] ease-out rounded-md shadow-lg"
-        />
+        {thumbnailSrc && (
+          <img
+            src={thumbnailSrc}
+            alt={thumbnailAlt} // Use the thumbnailAlt prop
+            width={1920}
+            height={1080}
+            className="w-full transition-all duration-200 group-hover:brightness-[0.8] ease-out rounded-md shadow-lg"
+          />
+        )}
+        {/* <div  className={`box ${ !isVideoOpen ? 'hidden opacity-0' : ''}`}>
         <div className="absolute inset-0 flex items-center justify-center group-hover:scale-100 scale-[0.9] transition-all duration-200 ease-out rounded-2xl">
           <div className="bg-primary/10 flex items-center justify-center rounded-full backdrop-blur-md size-28">
             <div
@@ -86,15 +98,17 @@ export default function HeroVideoDialog({
             </div>
           </div>
         </div>
+        </div> */}
+       
       </div>
       <AnimatePresence>
         {isVideoOpen && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            onClick={() => setIsVideoOpen(false)}
+             onClick={() => handleVideoOpen(false)} 
             exit={{ opacity: 0 }}
-            className="fixed inset-0 !z-50 flex items-center justify-center bg-black/50 backdrop-blur-md"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md"
           >
             <motion.div
               {...selectedAnimation}

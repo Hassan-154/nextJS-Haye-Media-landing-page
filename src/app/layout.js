@@ -1,11 +1,12 @@
-import { Inter } from 'next/font/google'; // Updated import from built-in next/font
+import { Inter } from "next/font/google"; // Updated import from built-in next/font
 import "./globals.css";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 // Load Inter font from Google Fonts
 const inter = Inter({
-  subsets: ['latin'], // Specify subsets as needed
-  variable: '--font-inter', // CSS variable for font
+  subsets: ["latin"], // Specify subsets as needed
+  variable: "--font-inter", // CSS variable for font
 });
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       >
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
