@@ -5,7 +5,8 @@
     "signature": "/images/sign.png",
     "description": "\"Our results and online presence went through the roof more or less overnight, mind-blowing!\"",
     "author_name": "Malik Shkraba",
-    "author_title": "COO of Friday"
+    "author_title": "COO of Friday",
+        "video_url": "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
   },
   {
     "id": 2,
@@ -13,6 +14,7 @@
     "signature": "/images/toggle-title.png",
     "description": "\"These guy don't mess around. we saw results from month one. If you want to grow your business, look no further.\"",
     "author_name": "Tony Gomez",
-    "author_title": "Founder of Thursday"
+    "author_title": "Founder of Thursday",
+    "video_url": "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
   }
 ]

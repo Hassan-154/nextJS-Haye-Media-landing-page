@@ -42,7 +42,7 @@ function OurClients() {
                 <HeroVideoDialog
                   className="dark:hidden block !-z-[0]"
                   animationStyle="from-center"
-                  videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
+                  videoSrc={clientItems.video_url}
                   {...(clientItems.id === 1 &&
                     true && {
                       thumbnailSrc: clientItems.title_image,
